@@ -1,0 +1,103 @@
+body{
+  margin:0px 0px;
+  font-family: 'Spartan' , sans-serif;
+  background-color: #F7EFE5;
+}
+#header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:15px;
+  background-color: #FFFBF5;
+  height:50px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  z-index:999;
+  position: sticky;
+  top:0;
+  left:0;
+}
+
+.logo{
+  padding-left:30px;
+  font-size: 40px;
+}
+
+#navbar{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  padding:0px;
+  margin-right: 100px;
+}
+#navbar li{
+  padding: 30px;
+}
+#navbar li a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  position:relative;
+}
+
+#navbar li a::after{
+  content:'';
+  height:3px;
+  width:0;
+  background: black;
+  margin:4px;
+  position: absolute;
+  display:block;
+}
+
+.text{
+  position:relative;
+}
+#navbar li a:hover::after{
+  width:100%;
+  transition: width 0.2s linear;
+  margin-top: 5px;
+}
+
+.fname{
+  padding:50px;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.text{
+  font-family: 'League Spartan', sans-serif;
+  font-size: 30px;
+  padding-left: 50px;
+}
+
+.label1{
+  margin-left:40px;
+  height:30px;
+  width:60%;
+  border-radius: 2px;
+  border-style: black 1px;
+}
+
+.label2{
+  margin-left:160px;
+  border-style: black 3px;
+}
+
+button.button{
+  font-size:14px;
+  font-weight:600;
+  padding:15px 35px;
+  color:#000;
+  background-color:#BCA37F;
+  border-radius:8px;
+  cursor:pointer;
+  border:none;
+  outline:none;
+  transition:0.2s;
+  margin:50px 50px;
+}
+button.button:hover{
+  background-color:#EAC696;
+}
